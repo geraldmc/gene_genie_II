@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" 
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:schema="http://schema.org/">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <link rel="preconnect" href="https://securepubads.g.doubleclick.net/" />
+<link rel="dns-prefetch" href="//securepubads.g.doubleclick.net" />
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+
+  var gwAds = {
+    slots: {},
+    slotsRendered: [],
+    slotsViewable: {},
+    adsRefreshed: false,
+    refreshTimer: 30000,
+    refreshMinimalVisibility: 60,
+  };
+
+  /**
+   * Refreshes visible ads at specified intervals.
+   */
+  document.addEventListener('DOMContentLoaded', function() {
+    if (!gwAds.adsRefreshed) {
+      gwAds.adsRefreshed = true;
+
+      window.setInterval(function() {
+        // Don't refresh ads if current tab/window isn't active.
+        if (typeof document.visibilityState === 'undefined' || document.visibilityState !== 'visible') {
+          return;
+        }
+
+        var slotsToRefresh = [];
+        Object.keys(gwAds.slotsViewable).forEach(function (key) {
+          if (gwAds.slotsViewable[key]) {
+            slotsToRefresh.push(gwAds.slots[key]);
+          }
+        });
+        if (slotsToRefresh.length > 0) {
+          googletag.cmd.push(function () {
+            googletag.pubads().refresh(slotsToRefresh);
+          });
+        }
+      }, gwAds.refreshTimer);
+    }
+  }, false);
+
+  googletag.cmd.push(function () {
+          gwAds.slots['div-gpt-ad-21806255153-sr1-2095126045'] = googletag.defineSlot('/21806255153/gw_sr1', [180, 150], 'div-gpt-ad-21806255153-sr1-2095126045').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-sky-696951130'] = googletag.defineSlot('/21806255153/gw_sky', [160, 600], 'div-gpt-ad-21806255153-sky-696951130').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-sr2-1327900304'] = googletag.defineSlot('/21806255153/gw_sr2', [180, 150], 'div-gpt-ad-21806255153-sr2-1327900304').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-lr1-1016581418'] = googletag.defineSlot('/21806255153/gw_lr1', [300, 250], 'div-gpt-ad-21806255153-lr1-1016581418').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-lr2-761860172'] = googletag.defineSlot('/21806255153/gw_lr2', [300, 250], 'div-gpt-ad-21806255153-lr2-761860172').addService(googletag.pubads());
+          (function() {
+var mapping = googletag.sizeMapping().
+  addSize([1000, 0], [728, 90]).
+  addSize([0, 0], []).
+  build();
+var adSlot = googletag.defineSlot('/21806255153/gw_lead', [728, 90], 'div-gpt-ad-21806255153-lead-1227350757').
+  defineSizeMapping(mapping).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+gwAds.slots['div-gpt-ad-21806255153-lead-1227350757'] = adSlot;
+}) ();
+          (function() {
+var mapping = googletag.sizeMapping().
+  addSize([0, 0], [320, 50]).
+  addSize([1000, 0], []).
+  build();
+var adSlot = googletag.defineSlot('/21806255153/gw_lead_mobile', [320, 50], 'div-gpt-ad-21806255153-lead_mobile-867059665').
+  defineSizeMapping(mapping).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+gwAds.slots['div-gpt-ad-21806255153-lead_mobile-867059665'] = adSlot;
+}) ();
+          gwAds.slots['div-gpt-ad-21806255153-txt1-1374713543'] = googletag.defineSlot('/21806255153/gw_txt1', 'fluid', 'div-gpt-ad-21806255153-txt1-1374713543').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-txt2-506639500'] = googletag.defineSlot('/21806255153/gw_txt2', 'fluid', 'div-gpt-ad-21806255153-txt2-506639500').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-txt3-1074408602'] = googletag.defineSlot('/21806255153/gw_txt3', 'fluid', 'div-gpt-ad-21806255153-txt3-1074408602').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-txt4-825329718'] = googletag.defineSlot('/21806255153/gw_txt4', 'fluid', 'div-gpt-ad-21806255153-txt4-825329718').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-txt5-1482206140'] = googletag.defineSlot('/21806255153/gw_txt5', 'fluid', 'div-gpt-ad-21806255153-txt5-1482206140').addService(googletag.pubads());
+          gwAds.slots['div-gpt-ad-21806255153-txt6-1689451942'] = googletag.defineSlot('/21806255153/gw_txt6', 'fluid', 'div-gpt-ad-21806255153-txt6-1689451942').addService(googletag.pubads());
+          (function() {
+var mapping = googletag.sizeMapping().
+  addSize([768, 0], [728, 90]).
+  addSize([0, 0], []).
+  build();
+var adSlot = googletag.defineSlot('/21806255153/gw_foot', [728, 90], 'div-gpt-ad-21806255153-foot-851728901').
+  defineSizeMapping(mapping).
+  setCollapseEmptyDiv(true).
+  addService(googletag.pubads());
+gwAds.slots['div-gpt-ad-21806255153-foot-851728901'] = adSlot;
+}) ();
+          gwAds.slots['div-gpt-ad-21806255153-bottom1-1626898193'] = googletag.defineSlot('/21806255153/gw_bottom1', [120, 38], 'div-gpt-ad-21806255153-bottom1-1626898193').addService(googletag.pubads());
+    
+    googletag.pubads().enableLazyLoad({
+      fetchMarginPercent: 250,
+      renderMarginPercent: 150,
+      mobileScaling: 2.0,
+    });
+    // The following options do not play well with lazy-loading:
+    // googletag.pubads().collapseEmptyDivs();
+    // googletag.pubads().enableSingleRequest();
+
+    
+googletag.pubads().setTargeting('page_type', 'unknown');
+  try {
+    var evalResult = eval('document.referrer.split("?")[0].slice(-40)');
+    googletag.pubads().setTargeting('referrer', evalResult);
+  }
+  catch (e) {
+  }
+  try {
+    var evalResult = eval('window.location.href');
+    googletag.pubads().setTargeting('url', evalResult);
+  }
+  catch (e) {
+  }
+  try {
+    var evalResult = eval('/utm_campaign=([^&#=]*)/.exec(window.location.search)[1];');
+    googletag.pubads().setTargeting('newsletter_campaign', evalResult);
+  }
+  catch (e) {
+  }    googletag.enableServices();
+
+    googletag.pubads().addEventListener('slotVisibilityChanged', function(event) {
+      gwAds.slotsViewable[event.slot.getSlotElementId()] = event.inViewPercentage >= gwAds.refreshMinimalVisibility;
+    });
+  });
+</script>
+
+<!--[if IE]><![endif]-->
+<link rel="preconnect" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://www.genomeweb.com/sites/default/themes/siteskin/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" title="Breaking News" href="https://www.genomeweb.com/breaking-news/rss" />
+<meta property="og:image" content="https://www.genomeweb.com/sites/default/themes/siteskin/inc/images/ogimg-default2.png" />
+<link rel="preload" as="font" type="font/woff" crossorigin="anonymous" href="/sites/default/themes/siteskin/inc/fonts/genomeweb/genomeweb.woff" />
+<link rel="preload" as="font" type="font/woff" crossorigin="anonymous" href="/sites/default/themes/siteskin/inc/fonts/HelveticaNeue/2A2C2B_0_0.woff" />
+<link rel="preload" as="font" type="font/woff" crossorigin="anonymous" href="/sites/default/themes/siteskin/inc/fonts/HelveticaNeue/2A2C03_1_0.woff" />
+<link rel="preload" as="font" type="font/woff" crossorigin="anonymous" href="/sites/default/themes/siteskin/inc/fonts/HelveticaNeue/2A2C03_2_0.woff" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="msvalidate.01" content="589DA07A6166C67D948C23FD502C6942" />
+<link rel="apple-touch-icon" href="/sites/default/themes/siteskin/inc/images/apple-touch-icon.png" />
+<meta name="HandheldFriendly" content="True" />
+<script type="text/javascript">dataLayer = [{"drupalLanguage":"en","userUid":0,"userAuthenticated":"No","userPremium":"No","userQf":"","userFollowsTopics":"No"}];</script>
+<meta name="rating" content="general" />
+<link rel="canonical" href="https://www.genomeweb.com/breaking-news" />
+<link rel="shortlink" href="https://www.genomeweb.com/breaking-news" />
+<meta http-equiv="content-language" content="en-us" />
+<meta property="og:site_name" content="GenomeWeb" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.genomeweb.com/breaking-news" />
+<meta property="og:title" content="Breaking News | GenomeWeb" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@genomeweb" />
+<meta name="twitter:site:id" content="275690183" />
+<meta name="twitter:url" content="https://www.genomeweb.com/breaking-news" />
+<meta name="twitter:title" content="Breaking News | GenomeWeb" />
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="sites/default/themes/siteskin/inc/js/css3-mediaqueries.js" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="sites/default/themes/siteskin/inc/js/ie8.js" />
+<![endif]-->
+  <title>Breaking News | GenomeWeb</title>
+  <link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__T31iESOrpUC0WuZLD0n24QEXLOIOVWQg5YbBUwUEkwY__sUmx5fQgFOt7pfGK6_JZK3pIBmSyzww4a96TBO6HqVg__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.css" media="all" />
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/default/files/advagg_css/css__FnPzezT1CRsvA7S4pOIAa_gwOA3QMqB97WNPXW_B_ZU__kgm8YYRzsHovW30t_PNZMZwGDOff3XiQqp-Ev_-TJrg__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.css" media="all" />
+<![endif]-->
+  
+<!--[if lte IE 9]>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__hQ4NovERz-HqK7CabFOl-3_RORVrWMEkpVtBANjaPkI__JjAAMwc7N8svFNOF0A9oE-_X-UZzXMMSa0NUW3xPmP0__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js#ie9-" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if gt IE 9]>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__hQ4NovERz-HqK7CabFOl-3_RORVrWMEkpVtBANjaPkI__JjAAMwc7N8svFNOF0A9oE-_X-UZzXMMSa0NUW3xPmP0__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js#ie10+" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__hQ4NovERz-HqK7CabFOl-3_RORVrWMEkpVtBANjaPkI__JjAAMwc7N8svFNOF0A9oE-_X-UZzXMMSa0NUW3xPmP0__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__zFsEYrngTCijWa7VXnmBYQBsHcKRFfi_IFHcHBfE17M__wt4D0q80WBsqBabjLK9YxgPuXT0m6LUCmKhh08he_dc__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js" defer="defer" onload="
+function advagg_mod_1() {
+  // Count how many times this function is called.
+  advagg_mod_1.count = ++advagg_mod_1.count || 1;
+  try {
+    if (advagg_mod_1.count <= 40) {
+      init_drupal_core_settings();
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_1.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_1.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 1 ms.
+      window.setTimeout(advagg_mod_1, 1);
+    }
+  }
+}
+function advagg_mod_1_check() {
+  if (window.init_drupal_core_settings && window.jQuery && window.Drupal) {
+    advagg_mod_1();
+  }
+  else {
+    window.setTimeout(advagg_mod_1_check, 1);
+  }
+}
+advagg_mod_1_check();"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(w,l){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});})(window,'dataLayer');
+//--><!]]>
+</script>
+<script type="text/javascript" async="async" src="https://www.googletagmanager.com/gtm.js?id=GTM-5KN26X8"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function init_drupal_core_settings() {jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"siteskin","theme_token":"ba3ejGXoqWBnpTu91PfWk4TimZn_oFSGoumTT_fobwc","jquery_version":"1.5","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/default\/modules\/contrib\/comment_notify\/comment_notify.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/default\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/fieldlayout\/fieldlayout.css":1,"sites\/all\/themes\/derma\/inc\/css\/default.css":1,"sites\/default\/themes\/siteskin\/inc\/css\/site.css":1,"sites\/default\/themes\/siteskin\/inc\/css\/my-topics.css":1,"sites\/default\/themes\/siteskin\/inc\/css\/mediaqueries.css":1,"sites\/default\/themes\/siteskin\/inc\/css\/print.css":1,"sites\/all\/themes\/derma\/inc\/css\/ie.css":1,"sites\/default\/themes\/siteskin\/inc\/css\/ie.css":1},"js":{"misc\/jquery-extend-3.4.0.js":1,"misc\/form.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/default\/modules\/contrib\/comment_notify\/comment_notify.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/default\/modules\/custom\/genomeweb\/genomeweb-loginblock.js":1,"sites\/default\/modules\/custom\/genomeweb\/genomeweb-loginpage.js":1,"sites\/default\/modules\/contrib\/better_exposed_filters\/better_exposed_filters.js":1,"sites\/all\/themes\/derma\/inc\/js\/derma.flyout.js":1,"sites\/all\/modules\/datalayer\/datalayer.js":1,"sites\/default\/modules\/custom\/genomeweb_gtm\/js\/genomeweb_ga_fix.js":1,"misc\/progress.js":1,"sites\/default\/modules\/custom\/genomeweb_sailthru_users\/js\/campaign-tracker.js":1,"sites\/all\/themes\/derma\/inc\/js\/inputhelp.js":1,"sites\/all\/themes\/derma\/inc\/js\/derma.responsive.js":1,"sites\/default\/themes\/siteskin\/inc\/js\/media.match.min.js":1,"sites\/default\/modules\/custom\/genomeweb_sailthru_client\/genomeweb_sailthru_personalization_engine\/js\/genomeweb_sailthru_personalization_engine.js":1,"sites\/default\/themes\/siteskin\/inc\/js\/genomeweb.slidenav.js":1,"sites\/default\/themes\/siteskin\/inc\/js\/hoverIntent.1.8.js":1,"sites\/default\/themes\/siteskin\/inc\/js\/derma.flyout.js":1,"sites\/default\/themes\/siteskin\/inc\/js\/enquire.min.js":1,"sites\/default\/themes\/siteskin\/inc\/js\/headroom.min.js":1,"sites\/default\/themes\/siteskin\/inc\/js\/genomeweb.sticky.js":1,"sites\/default\/themes\/siteskin\/inc\/js\/genomeweb.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.5\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ajax.js":1,"https:\/\/www.googletagmanager.com\/gtm.js?id=GTM-5KN26X8":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"better_exposed_filters":{"views":{"breaking_news":{"displays":{"breakingnews":{"filters":[]}}},"popular":{"displays":{"block_hp":{"filters":[]}}},"the_scan":{"displays":{"block_scan":{"filters":[]}}}},"datepicker":false,"slider":false,"settings":[],"autosubmit":false},"urlIsAjaxTrusted":{"\/search\/content":true,"\/breaking-news?destination=breaking-news":true},"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":0,"extIconPlacement":0,"extSubdomains":1,"extExclude":".\\.genomeweb\\.com.|.\\.360dx\\.com.|.\\.precisiononcologynews\\.com.","extInclude":"","extCssExclude":".brand-bar-logo","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":0,"mailtoLabel":"(link sends e-mail)"},"genomeweb_sailthru_client_customer_id":"14928ad6ea18f66547b6242de6d9be10","dataLayer":{"languages":{"en":{"language":"en","name":"English","native":"English","direction":0,"enabled":1,"plurals":0,"formula":"","domain":"","prefix":"","weight":0,"javascript":""}}}}); 
+if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(false);}} if(window.jQuery && window.Drupal){init_drupal_core_settings();}
+//--><!]]>
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body class="html not-front not-logged-in two-sidebars page-breaking-news domain-www-genomeweb-com page--breaking-news section--breaking-news" >
+    <div class="slidenav">
+    <a class="close">Close Menu</a>
+  </div>
+
+  <div id="pagecontainer">
+    <div id="skip-link">
+      <a href="#block-system-main" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+      <div class="region region-page-top">
+    <div class="region-page-top-inner region-inner">
+      <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KN26X8" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager">Google Tag Manager</iframe></noscript>    </div>
+  </div>
+    
+<div id="page">
+    <div class="region region-brand-bar">
+    <div class="region-inner">
+              <ul class="brand-bar-sites">
+                          <li class="brand-bar-sites-item"><a href="/" class="active" title="Go to homepage"><span  class="site--gw">GenomeWeb</span></a></li>
+                          <li class="brand-bar-sites-item"><a href="https://www.360dx.com/?utm_source=Internal%20Cross%20Promotion&amp;utm_medium=Branding%20Bar&amp;utm_campaign=360" title="Go to 360Dx"><span  class="site--360">360Dx</span></a></li>
+                          <li class="brand-bar-sites-item"><a href="https://www.precisiononcologynews.com/?utm_source=Internal%20Cross%20Promotion&amp;utm_medium=Branding%20Bar&amp;utm_campaign=preonc" title="Go to Precision Oncology News"><span  class="site--preonc">Precision Oncology News</span></a></li>
+                    </ul>
+                </div>
+  </div>
+    <div class="region region-banner">
+    <div class="region-banner-inner region-inner">
+      <div id="block-ad-manager-lead" class="block block-ad-manager odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-lead-0" class="ad-manager-ad gpt-ads ad-manager-ad--lead"><div id="div-gpt-ad-21806255153-lead-1227350757"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-lead-1227350757"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-block-6" class="block block-block even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <span class="spacer"></span>    </div>
+  </div>
+</div>
+    </div>
+  </div>
+    <div class="region region-header">
+    <div class="region-header-inner region-inner">
+      <div id="block-siteskeleton-logo" class="block block-siteskeleton odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <a href="/" title="Home" rel="home" id="logo"><img src="https://www.genomeweb.com/sites/default/themes/siteskin/logo.png" alt="GenomeWeb" /></a>    </div>
+  </div>
+</div>
+<div id="block-menu-menu-secondary-menu" class="block block-menu even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <ul class="menu"><li class="first leaf link-rss-feeds link-node-200305"><a href="/rss-feeds" title="">RSS Feeds</a></li>
+<li class="leaf link-twitter link-http--twittercom-genomeweb"><a href="http://twitter.com/genomeweb" title="">Twitter</a></li>
+<li class="last leaf link-linkedin link-https--wwwlinkedincom-company-116396"><a href="https://www.linkedin.com/company/116396" title="">LinkedIn</a></li>
+</ul>    </div>
+  </div>
+</div>
+<div id="block-genomeweb-user" class="block block-genomeweb block-custom-genomeweb-user-login odd">
+
+      
+  <form class="user-login-form" action="/breaking-news?destination=breaking-news" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name"> <span class="form-required" title="This field is required.">*</span></label>
+ <input placeholder="E-mail" type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass"> <span class="form-required" title="This field is required.">*</span></label>
+ <input placeholder="Password" type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<span><input  type="checkbox" id="show_password" class="js-password-mask-toggle" data-password-input-id="edit-pass"/><label for="show_password">Show password</label></span><div class="item-list"><ul><li class="first last"><div  class="user-form-header-links">
+
+<a href="/user/password?click_id=UL_Login&amp;type=Login_Block" id="forgot_password" class="">Forgot your password?</a>
+</div></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-kbJuv3h3FugrwudsdSOvDs-MskTCM3yPFjs6K3IFzBc" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input class="button form-submit" type="submit" id="edit-submit" name="op" value="Log in" /></div></div></form><div class="item-list"><ul><li class="first last"><div  class="">
+
+<a href="/subscribe?click_id=UL_Subscribe&amp;type=Login_Block" id="UL_Subscribe" class="genomeweb-register button button-yellow">Subscribe</a>
+</div></li>
+</ul></div></div>
+<div id="block-views-exp-site-search-page-single" class="block block-views even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <form action="/search/content" method="get" id="views-exposed-form-site-search-page-single" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-fulltext-all-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                  <label for="edit-fulltext-all">
+            Contains all of these words:          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-fulltext-all">
+ <input placeholder="Enter your keywords" type="text" id="edit-fulltext-all" name="fulltext_all" value="" size="30" maxlength="128" class="form-text" />
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-site-search" name="" value="Search" class="form-submit" />    </div>
+      </div>
+</div>
+</div></form>    </div>
+  </div>
+</div>
+<div id="block-siteskeleton-primary-nav" class="block block-siteskeleton odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <div class="menu-block-wrapper menu-block-primary_flyout menu-name-main-menu parent-mlid-0 menu-level-0">
+  <ul class="menu" id="main-menu-links"><li class="first expanded menu-mlid-2185 menu-dir-l menu-num-0 menu-num--7  menu-flyout link-business--policy link-taxonomy-term-1"><a href="/business" title="">Business &amp; Policy</a><div class="menu-flyout-menu"><div class="menu-columns ss-columns menu-columns-2 ss-columns-2"><ul class="menu" id="main-menu-links"><li class="menu-column ss-column menu-column-0 menu-column-first"><ul class="menu" id="main-menu-links"><li class="first leaf menu-mlid-2505 link-business-news link-taxonomy-term-8"><a href="/business-news" title="">Business News</a></li>
+<li class="leaf menu-mlid-2506 link-research-funding link-taxonomy-term-9"><a href="/research-funding" title="">Research Funding</a></li>
+<li class="leaf menu-mlid-2507 link-policy--legislation link-taxonomy-term-10"><a href="/policy-legislation" title="">Policy &amp; Legislation</a></li>
+</ul></li><li class="menu-column ss-column menu-column-1 menu-column-last"><ul class="menu" id="main-menu-links"><li class="leaf menu-mlid-2508 link-regulatory-news link-taxonomy-term-11"><a href="/regulatory-news" title="">Regulatory News</a></li>
+<li class="last leaf menu-mlid-2509 link-reimbursement link-taxonomy-term-12"><a href="/reimbursement" title="">Reimbursement</a></li>
+</ul></li></ul></div></div></li>
+<li class="expanded menu-mlid-2186 menu-dir-l menu-num-1 menu-num--6  menu-flyout link-technology link-taxonomy-term-2"><a href="/technology" title="">Technology</a><div class="menu-flyout-menu"><div class="menu-columns ss-columns menu-columns-2 ss-columns-2"><ul class="menu" id="main-menu-links"><li class="menu-column ss-column menu-column-0 menu-column-first"><ul class="menu" id="main-menu-links"><li class="first leaf menu-mlid-2320 link-microarrays--multiplexing link-taxonomy-term-13"><a href="/microarrays-multiplexing" title="">Microarrays &amp; Multiplexing</a></li>
+<li class="leaf menu-mlid-2321 link-pcr link-taxonomy-term-14"><a href="/pcr" title="">PCR</a></li>
+<li class="leaf menu-mlid-2322 link-informatics link-taxonomy-term-15"><a href="/informatics" title="">Informatics</a></li>
+<li class="leaf menu-mlid-2323 link-sequencing link-taxonomy-term-16"><a href="/sequencing" title="">Sequencing</a></li>
+</ul></li><li class="menu-column ss-column menu-column-1 menu-column-last"><ul class="menu" id="main-menu-links"><li class="leaf menu-mlid-2324 link-mass-spec link-taxonomy-term-17"><a href="/mass-spec" title="">Mass Spec</a></li>
+<li class="leaf menu-mlid-2325 link-sample-prep link-taxonomy-term-18"><a href="/sample-prep" title="">Sample Prep</a></li>
+<li class="last leaf menu-mlid-2326 link-gene-silencing-gene-editing link-taxonomy-term-19"><a href="/gene-silencinggene-editing" title="">Gene Silencing/Gene Editing</a></li>
+</ul></li></ul></div></div></li>
+<li class="expanded menu-mlid-2187 menu-dir-l menu-num-2 menu-num--5  menu-flyout link-research link-taxonomy-term-3"><a href="/research" title="">Research</a><div class="menu-flyout-menu"><div class="menu-columns ss-columns menu-columns-2 ss-columns-2"><ul class="menu" id="main-menu-links"><li class="menu-column ss-column menu-column-0 menu-column-first"><ul class="menu" id="main-menu-links"><li class="first leaf menu-mlid-2502 link-genetic-research link-taxonomy-term-20"><a href="/genetic-research" title="">Genetic Research</a></li>
+<li class="leaf menu-mlid-2510 link-gene-expression-research link-taxonomy-term-21"><a href="/gene-expression-research" title="">Gene Expression Research</a></li>
+<li class="leaf menu-mlid-2511 link-epigenetics-research link-taxonomy-term-22"><a href="/epigenetics-research" title="">Epigenetics Research</a></li>
+</ul></li><li class="menu-column ss-column menu-column-1 menu-column-last"><ul class="menu" id="main-menu-links"><li class="leaf menu-mlid-2512 link-proteomics--protein-research link-taxonomy-term-23"><a href="/proteomics-protein-research" title="">Proteomics &amp; Protein Research</a></li>
+<li class="last leaf menu-mlid-2513 link-cell-biology-research link-taxonomy-term-24"><a href="/cell-biology-research" title="">Cell Biology Research</a></li>
+</ul></li></ul></div></div></li>
+<li class="expanded menu-mlid-2188 menu-dir-l menu-num-3 menu-num--4  menu-flyout link-diagnostics link-taxonomy-term-4"><a href="/diagnostics" title="">Diagnostics</a><div class="menu-flyout-menu"><div class="menu-columns ss-columns menu-columns-2 ss-columns-2"><ul class="menu" id="main-menu-links"><li class="menu-column ss-column menu-column-0 menu-column-first"><ul class="menu" id="main-menu-links"><li class="first leaf menu-mlid-2518 link-molecular-diagnostics link-taxonomy-term-33"><a href="/molecular-diagnostics" title="">Molecular Diagnostics</a></li>
+<li class="leaf menu-mlid-2519 link-companion-diagnostics link-taxonomy-term-34"><a href="/companion-diagnostics" title="">Companion Diagnostics</a></li>
+<li class="leaf menu-mlid-2520 link-biomarker-discovery--validation link-taxonomy-term-35"><a href="/biomarker-discovery-validation" title="">Biomarker Discovery &amp; Validation</a></li>
+</ul></li><li class="menu-column ss-column menu-column-1 menu-column-last"><ul class="menu" id="main-menu-links"><li class="leaf menu-mlid-2521 link-drug-discovery--development link-taxonomy-term-36"><a href="/drug-discovery-development" title="">Drug Discovery &amp; Development</a></li>
+<li class="leaf menu-mlid-2522 link-clinical-sequencing link-taxonomy-term-37"><a href="/clinical-sequencing" title="">Clinical Sequencing</a></li>
+<li class="last leaf menu-mlid-19987 link-liquid-biopsy link-taxonomy-term-8887"><a href="/liquid-biopsy" title="">Liquid Biopsy</a></li>
+</ul></li></ul></div></div></li>
+<li class="expanded menu-mlid-2190 menu-dir-r menu-num-4 menu-num--3  menu-flyout link-disease-areas link-taxonomy-term-5"><a href="/disease" title="">Disease Areas</a><div class="menu-flyout-menu"><div class="menu-columns ss-columns menu-columns-2 ss-columns-2"><ul class="menu" id="main-menu-links"><li class="menu-column ss-column menu-column-0 menu-column-first"><ul class="menu" id="main-menu-links"><li class="first leaf menu-mlid-2524 link-cancer link-taxonomy-term-25"><a href="/cancer" title="">Cancer</a></li>
+<li class="leaf menu-mlid-2525 link-infectious-disease link-taxonomy-term-26"><a href="/infectious-disease" title="">Infectious Disease</a></li>
+<li class="leaf menu-mlid-2526 link-cardiovascular-disease link-taxonomy-term-27"><a href="/cardiovascular-disease" title="">Cardiovascular Disease</a></li>
+<li class="leaf menu-mlid-2527 link-neurological--psychological-disease link-taxonomy-term-28"><a href="/neurological-psychological-disorders" title="">Neurological &amp; Psychological Disease</a></li>
+<li class="leaf menu-mlid-2529 link-autoimmune-disease link-taxonomy-term-30"><a href="/autoimmune-disease" title="">Autoimmune Disease</a></li>
+</ul></li><li class="menu-column ss-column menu-column-1 menu-column-last"><ul class="menu" id="main-menu-links"><li class="leaf menu-mlid-2530 link-inherited-disease link-taxonomy-term-31"><a href="/inherited-disease" title="">Inherited Disease</a></li>
+<li class="leaf menu-mlid-2531 link-reproductive-health link-taxonomy-term-32"><a href="/reproductive-health" title="">Reproductive Health</a></li>
+<li class="leaf menu-mlid-9492 link-respiratory link-taxonomy-term-8740"><a href="/respiratory" title="">Respiratory</a></li>
+<li class="last leaf menu-mlid-9478 link-gastrointestinal link-taxonomy-term-8738"><a href="/gastrointestinal" title="">Gastrointestinal</a></li>
+</ul></li></ul></div></div></li>
+<li class="leaf menu-mlid-2239 menu-dir-r menu-num-5 menu-num--2  menu-flyout link-applied-markets link-taxonomy-term-6"><a href="/markets" title="">Applied Markets</a><div class="menu-flyout-menu"></div></li>
+<li class="last expanded menu-mlid-2189 menu-dir-r menu-num-6 menu-num--1  menu-flyout link-resources link-node-187266"><a href="/resources" title="">Resources</a><div class="menu-flyout-menu"><div class="menu-columns ss-columns menu-columns-2 ss-columns-2"><ul class="menu" id="main-menu-links"><li class="menu-column ss-column menu-column-0 menu-column-first"><ul class="menu" id="main-menu-links"><li class="first leaf menu-mlid-2496 link-webinars link-resources-webinars"><a href="/resources/webinars" title="">Webinars</a></li>
+<li class="leaf menu-mlid-2500 link-white-papers link-resources-white-papers-all"><a href="/resources/white-papers/all" title="">White Papers</a></li>
+<li class="leaf menu-mlid-2895 link-the-scan link-node-7"><a href="/scan" title="">The Scan</a></li>
+<li class="leaf menu-mlid-2896 link-career-blog link-node-8"><a href="/careers" title="">Career Blog</a></li>
+<li class="leaf menu-mlid-2317 link-job-listings link-resources-jobs"><a href="/resources/jobs" title="">Job Listings</a></li>
+</ul></li><li class="menu-column ss-column menu-column-1 menu-column-last"><ul class="menu" id="main-menu-links"><li class="leaf menu-mlid-2538 link-new-products link-resources-new-product"><a href="/resources/new-product" title="">New Products</a></li>
+<li class="leaf menu-mlid-2537 link-people-in-the-news link-resources-people-news"><a href="/resources/people-news" title="">People in the News</a></li>
+<li class="leaf menu-mlid-2897 link-conferences--events link-node-199284"><a href="/resources/genomics-conferences-events" title="">Conferences &amp; Events</a></li>
+<li class="last leaf menu-mlid-19626 link-genomics-clinical-implementation link-taxonomy-term-8793"><a href="/genomics-clinical-implementation" title="Genomics: Clinical Implementation">Genomics: Clinical Implementation</a></li>
+</ul></li></ul></div></div></li>
+</ul></div>
+<h2 class="menu-title">Menu</h2>    </div>
+  </div>
+</div>
+<div id="block-siteskeleton-breadcrumb" class="block block-siteskeleton even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <div class="breadcrumb"><a href="/">Home</a><span class="separator"> » </span><span class="current">Breaking News</span></div>    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  
+  <div class="region region-main">
+    <div class="region-inner region-main-inner">
+
+      <div class="page-columns-first">
+        <div class="page-column-content">
+            <div class="region region-content-top">
+    <div class="region-content-top-inner region-inner">
+      <div id="block-ad-manager-lead-mobile" class="block block-ad-manager odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-lead-mobile-0" class="ad-manager-ad gpt-ads ad-manager-ad--lead-mobile"><div id="div-gpt-ad-21806255153-lead_mobile-867059665"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-lead_mobile-867059665"); });</script></div></div>    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+          <div class="page-columns-second">
+            <div class="page-column-content">
+                              <div class="region region-content">
+    <div class="region-content-inner region-inner">
+      <div id="block-siteskeleton-pagetitle" class="block block-siteskeleton even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <h1 id="page-title"><span class="">Breaking News</span></h1>    </div>
+  </div>
+</div>
+<div id="block-system-main" class="block block-system odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <div class="view view-breaking-news view-id-breaking_news view-display-id-breakingnews view-dom-id-4cda715e32a24ed318a77f98fd481c86 view-breaking-news-breakingnews">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-group">
+      <div class="views-row views-row-1 views-row-odd views-row-first">
+      <div id="node-406939" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/sequencing/single-cell-sequencing-offers-hints-molecular-dynamics-human-embryo-implantation" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-21T14:45:00-04:00">Aug 21, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/sequencing/single-cell-sequencing-offers-hints-molecular-dynamics-human-embryo-implantation">Single-Cell Sequencing Offers Hints to Molecular Dynamics of Human Embryo Implantation</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>Using single-cell sequencing and an <em>in vitro</em> culture system, researchers followed transcriptomic and epigenomic features over time in three main embryonic cell lineages.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Single-Cell Sequencing Offers Hints to Molecular Dynamics of Human Embryo Implantation" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/sequencing/single-cell-sequencing-offers-hints-molecular-dynamics-human-embryo-implantation" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-2 views-row-even">
+      <div id="node-406932" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/liquid-biopsy/nih-awards-940k-johns-hopkins-led-team-extracellular-vesicle-research" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-21T10:30:30-04:00">Aug 21, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/liquid-biopsy/nih-awards-940k-johns-hopkins-led-team-extracellular-vesicle-research">NIH Awards $940K to Johns Hopkins-Led Team for Extracellular Vesicle Research </a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p id="docs-internal-guid-c06bd20d-7fff-c07a-a9b5-f2011917da5c" dir="ltr">The team will create a group called the Extracellular RNA Communication Consortium Stage 2 to develop new EV-based technology and treat diseases. <br /></p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="NIH Awards $940K to Johns Hopkins-Led Team for Extracellular Vesicle Research " class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/liquid-biopsy/nih-awards-940k-johns-hopkins-led-team-extracellular-vesicle-research" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-3 views-row-odd">
+      <div id="node-406931" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/infectious-disease/aqualung-therapeutics-wins-225k-nih-grant-develop-respiratory-distress-biomarker" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-21T10:30:30-04:00">Aug 21, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/infectious-disease/aqualung-therapeutics-wins-225k-nih-grant-develop-respiratory-distress-biomarker">Aqualung Therapeutics Wins $225K NIH Grant to Develop Respiratory Distress Biomarker Panel</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The drug developer said that the biomarker panel will form the basis of a planned point-of-care test for acute respiratory distress syndrome.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Aqualung Therapeutics Wins $225K NIH Grant to Develop Respiratory Distress Biomarker Panel" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/infectious-disease/aqualung-therapeutics-wins-225k-nih-grant-develop-respiratory-distress-biomarker" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-4 views-row-even">
+      <div id="node-406927" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/sequencing/indias-skeleton-lake-yields-ancient-human-remains-spanning-diverse-populations-time" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-20T14:30:15-04:00">Aug 20, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/sequencing/indias-skeleton-lake-yields-ancient-human-remains-spanning-diverse-populations-time">India's 'Skeleton Lake' Yields Ancient Human Remains Spanning Diverse Populations, Time Points</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>Researchers saw representatives from at least three population clusters who died up to 1,000 years apart at the "enigmatic" site in the Indian Himalayas.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="India&#039;s &#039;Skeleton Lake&#039; Yields Ancient Human Remains Spanning Diverse Populations, Time Points" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/sequencing/indias-skeleton-lake-yields-ancient-human-remains-spanning-diverse-populations-time" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-5 views-row-odd">
+      <div id="node-406925" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/cancer/uspstf-formalizes-slightly-expanded-brca-screening-recommendations" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-20T13:30:30-04:00">Aug 20, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/cancer/uspstf-formalizes-slightly-expanded-brca-screening-recommendations">USPSTF Formalizes Slightly Expanded BRCA Screening Recommendations</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>After reviewing more than 100 studies, the panel issued recommendations focused on women with a personal or family history of BRCA1/2-related cancers or high-risk ancestry.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="USPSTF Formalizes Slightly Expanded BRCA Screening Recommendations" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/cancer/uspstf-formalizes-slightly-expanded-brca-screening-recommendations" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-6 views-row-even">
+      <div id="node-406908" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/business-news/genomenon-enters-chinese-market-shanghai-shanyi-partnership" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-20T10:30:15-04:00">Aug 20, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/business-news/genomenon-enters-chinese-market-shanghai-shanyi-partnership">Genomenon Enters Chinese Market With Shanghai Shanyi Partnership</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The company will bring its Mastermind genomic search engine to clinical labs in China, where early tests have shown a sharp reduction in VUS search time. </p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Genomenon Enters Chinese Market With Shanghai Shanyi Partnership" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/business-news/genomenon-enters-chinese-market-shanghai-shanyi-partnership" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-7 views-row-odd">
+      <div id="node-406904" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/sequencing/10x-genomics-files-100m-ipo" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-20T09:45:45-04:00">Aug 20, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/sequencing/10x-genomics-files-100m-ipo">10x Genomics Files for $100M IPO</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The single-cell analysis firm plans to use the proceeds to fund general corporate activities and potentially acquire businesses, products, or technologies.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="10x Genomics Files for $100M IPO" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/sequencing/10x-genomics-files-100m-ipo" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-8 views-row-even">
+      <div id="node-406905" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/molecular-diagnostics/cancer-genetics-posts-15-percent-rise-q2-revenues" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-20T09:45:00-04:00">Aug 20, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/molecular-diagnostics/cancer-genetics-posts-15-percent-rise-q2-revenues">Cancer Genetics Posts 15 Percent Rise in Q2 Revenues</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The revenues come entirely from CGI's discovery services as its divested biopharma services and clinical lab units were considered discontinued operations.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Cancer Genetics Posts 15 Percent Rise in Q2 Revenues" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/molecular-diagnostics/cancer-genetics-posts-15-percent-rise-q2-revenues" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-9 views-row-odd">
+      <div id="node-406893" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/business-news/genomind-neuroflow-collaborate-provide-genetic-testing-based-mental-health-services" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-19T13:30:30-04:00">Aug 19, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/business-news/genomind-neuroflow-collaborate-provide-genetic-testing-based-mental-health-services">Genomind, NeuroFlow Collaborate to Provide Genetic Testing-Based Mental Health Services</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The companies said that they will combine NeuroFlow’s mental health integration platform and Genomind's Professional PGx Express pharmacogenomics service.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Genomind, NeuroFlow Collaborate to Provide Genetic Testing-Based Mental Health Services" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/business-news/genomind-neuroflow-collaborate-provide-genetic-testing-based-mental-health-services" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-10 views-row-even">
+      <div id="node-406892" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/microarrays-multiplexing/pleiotropy-analysis-reveals-genes-variants-shared-across-multiple-complex" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-19T12:30:45-04:00">Aug 19, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/microarrays-multiplexing/pleiotropy-analysis-reveals-genes-variants-shared-across-multiple-complex">Pleiotropy Analysis Reveals Genes, Variants Shared Across Multiple Complex Traits</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>Results from some 4,200 GWAS suggest a significant subset of genetic loci contribute to multiple complex traits, though the type of overlap further varied at the gene and SNP levels.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Pleiotropy Analysis Reveals Genes, Variants Shared Across Multiple Complex Traits" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/microarrays-multiplexing/pleiotropy-analysis-reveals-genes-variants-shared-across-multiple-complex" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-11 views-row-odd">
+      <div id="node-406883" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/business-news/canaccord-genuity-svb-leerink-initiate-coverage-castle-biosciences" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-19T10:45:45-04:00">Aug 19, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/business-news/canaccord-genuity-svb-leerink-initiate-coverage-castle-biosciences">Canaccord Genuity, SVB Leerink Initiate Coverage of Castle Biosciences</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>Canaccord Genuity began coverage of Castle Biosciences with a Buy rating and a $26 price target, while SVB Leerink assigned an Outperform rating and a $28 price target. </p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Canaccord Genuity, SVB Leerink Initiate Coverage of Castle Biosciences" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/business-news/canaccord-genuity-svb-leerink-initiate-coverage-castle-biosciences" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-12 views-row-even">
+      <div id="node-406881" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/top-five-articles-genomeweb-last-week-genetic-testing-errors-myriad-q4-earnings-and-more" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-19T09:45:45-04:00">Aug 19, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/top-five-articles-genomeweb-last-week-genetic-testing-errors-myriad-q4-earnings-and-more">Top Five Articles on GenomeWeb Last Week: Genetic Testing Errors, Myriad Q4 Earnings, and More</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>Last week, GenomeWeb readers were most interested in a report of cases where genetic testing was incorrectly recommended, ordered, interpreted, or used.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Top Five Articles on GenomeWeb Last Week: Genetic Testing Errors, Myriad Q4 Earnings, and More" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/top-five-articles-genomeweb-last-week-genetic-testing-errors-myriad-q4-earnings-and-more" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-13 views-row-odd">
+      <div id="node-406872" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/business-news/federal-appeals-court-invalidates-second-enzo-biochem-patent-three-months" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T17:15:15-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/business-news/federal-appeals-court-invalidates-second-enzo-biochem-patent-three-months">Federal Appeals Court Invalidates Second Enzo Biochem Patent in Three Months</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The case, which was originally being fought between Enzo and Hologic, was decided in favor of Becton Dickinson, Hologic's co-plaintiff.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Federal Appeals Court Invalidates Second Enzo Biochem Patent in Three Months" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/business-news/federal-appeals-court-invalidates-second-enzo-biochem-patent-three-months" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-14 views-row-even">
+      <div id="node-406870" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/genetic-research/brigham-and-womens-hospital-opens-preventive-genomics-clinic" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T15:30:30-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/genetic-research/brigham-and-womens-hospital-opens-preventive-genomics-clinic">Brigham and Women's Hospital Opens Preventive Genomics Clinic</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The clinic will offer comprehensive DNA sequencing, interpretation, and reporting of disease-associated genes for healthy adults and their children.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Brigham and Women&#039;s Hospital Opens Preventive Genomics Clinic" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/genetic-research/brigham-and-womens-hospital-opens-preventive-genomics-clinic" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-15 views-row-odd">
+      <div id="node-406866" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/brief-week-perkinelmer-kromatid-bruker-and-more" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T15:15:15-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/brief-week-perkinelmer-kromatid-bruker-and-more">In Brief This Week: PerkinElmer, KromaTid, Bruker, and More</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><span property="schema:name" content="In Brief This Week: PerkinElmer, KromaTid, Bruker, and More" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/brief-week-perkinelmer-kromatid-bruker-and-more" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-16 views-row-even">
+      <div id="node-406864" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/people-news-robert-georgantas-james-datin-c-alexander-valencia-more" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T14:30:30-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/people-news-robert-georgantas-james-datin-c-alexander-valencia-more">People in the News: Robert Georgantas, James Datin, C. Alexander Valencia, More</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><span property="schema:name" content="People in the News: Robert Georgantas, James Datin, C. Alexander Valencia, More" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/people-news-robert-georgantas-james-datin-c-alexander-valencia-more" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-17 views-row-odd">
+      <div id="node-406856" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/sequencing/beyond-celiac-grants-160k-transcriptomics-pilot-study" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T11:45:00-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/sequencing/beyond-celiac-grants-160k-transcriptomics-pilot-study">Beyond Celiac Grants $160K for Transcriptomics Pilot Study</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The award will go to Jocelyn Silvester of Children's Hospital Boston, to fund transcriptomics research on intestinal inflammation caused by gluten.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Beyond Celiac Grants $160K for Transcriptomics Pilot Study" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/sequencing/beyond-celiac-grants-160k-transcriptomics-pilot-study" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-18 views-row-even">
+      <div id="node-406853" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/companion-diagnostics/foundation-medicine-seek-fda-approval-foundationone-cdx-genentechs-rozlytrek" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T10:45:00-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/companion-diagnostics/foundation-medicine-seek-fda-approval-foundationone-cdx-genentechs-rozlytrek">Foundation Medicine to Seek FDA Approval for FoundationOne as CDx to Genentech's Rozlytrek</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p dir="ltr">The FDA has granted accelerated approval to Rozlytrek as a treatment for adult and adolescent patients with NTRK fusion-positive cancers.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Foundation Medicine to Seek FDA Approval for FoundationOne as CDx to Genentech&#039;s Rozlytrek" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/companion-diagnostics/foundation-medicine-seek-fda-approval-foundationone-cdx-genentechs-rozlytrek" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-19 views-row-odd">
+      <div id="node-406850" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/applied-markets/ucla-lead-10m-conservation-genomics-project" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T10:45:00-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/applied-markets/ucla-lead-10m-conservation-genomics-project">UCLA to Lead $10M Conservation Genomics Project</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The $10 million initiative will include scientists from the University of California's campuses, as well as from governmental and nongovernmental organizations.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="UCLA to Lead $10M Conservation Genomics Project" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/applied-markets/ucla-lead-10m-conservation-genomics-project" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-20 views-row-even">
+      <div id="node-406851" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/regulatory-news/fda-stepping-actions-against-pgx-testing-forcing-some-labs-stop-reporting-drug" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T10:30:30-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/regulatory-news/fda-stepping-actions-against-pgx-testing-forcing-some-labs-stop-reporting-drug">FDA Stepping Up Actions Against PGx Testing, Forcing Some Labs to Stop Reporting Drug Information</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p id="docs-internal-guid-b701fcc4-7fff-fc7b-b9db-28c677a01c94" dir="ltr">Industry players, faced with vague communications from the agency, scramble to decipher regulatory expectations and criticize the agency for trying to control PGx knowledge.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="FDA Stepping Up Actions Against PGx Testing, Forcing Some Labs to Stop Reporting Drug Information" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/regulatory-news/fda-stepping-actions-against-pgx-testing-forcing-some-labs-stop-reporting-drug" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-21 views-row-odd">
+      <div id="node-406849" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/new-products-posted-genomeweb-loop-genomics-integrated-dna-technologies-dovetail-genomics" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-16T10:30:00-04:00">Aug 16, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/new-products-posted-genomeweb-loop-genomics-integrated-dna-technologies-dovetail-genomics">New Products Posted to GenomeWeb: Loop Genomics, Integrated DNA Technologies, Dovetail Genomics</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><span property="schema:name" content="New Products Posted to GenomeWeb: Loop Genomics, Integrated DNA Technologies, Dovetail Genomics" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/new-products-posted-genomeweb-loop-genomics-integrated-dna-technologies-dovetail-genomics" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-22 views-row-even">
+      <div id="node-406835" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/gene-silencinggene-editing/nih-ucsf-researchers-develop-crispri-platform-genetic-screening-human" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-15T15:45:00-04:00">Aug 15, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/gene-silencinggene-editing/nih-ucsf-researchers-develop-crispri-platform-genetic-screening-human">NIH, UCSF Researchers Develop CRISPRi Platform for Genetic Screening of Human Neurons</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The researchers identified genes that specifically extend the lifespan of neurons and found genes that increase the number of neurites in the brain.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="NIH, UCSF Researchers Develop CRISPRi Platform for Genetic Screening of Human Neurons" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/gene-silencinggene-editing/nih-ucsf-researchers-develop-crispri-platform-genetic-screening-human" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-23 views-row-odd">
+      <div id="node-406832" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/business-news/genecentric-therapeutics-acquires-select-immunogenomics" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-15T15:00:00-04:00">Aug 15, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/business-news/genecentric-therapeutics-acquires-select-immunogenomics">GeneCentric Therapeutics Acquires Select ImmunoGenomics</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The combined company will use RNA-based tools to enhance drug development by identifying the right patients for oncology drugs and potentially improving drug response rates.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="GeneCentric Therapeutics Acquires Select ImmunoGenomics" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/business-news/genecentric-therapeutics-acquires-select-immunogenomics" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-24 views-row-even">
+      <div id="node-406828" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/sequencing/actionable-mutation-analysis-reveals-germline-risk-older-crc-patients" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-15T13:45:15-04:00">Aug 15, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/sequencing/actionable-mutation-analysis-reveals-germline-risk-older-crc-patients">Actionable Mutation Analysis Reveals Germline Risk in Older CRC Patients</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>The team saw risky mutations in colorectal cancer, polyp, and Lynch syndrome-related genes in almost 4 percent of CRC patients diagnosed at 72 years old, on average.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Actionable Mutation Analysis Reveals Germline Risk in Older CRC Patients" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/sequencing/actionable-mutation-analysis-reveals-germline-risk-older-crc-patients" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-25 views-row-odd views-row-last">
+      <div id="node-406827" class="node node-article-news node-teaser node-not-page node-viewmode-teaser clearfix" about="/sequencing/court-tacks-10m-10x-genomics-infringement-penalty" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-top fieldlayout-has-body clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+    <div  class="clearfix fieldlayout-region-top"><div  class=" container-inline fieldlayout node-field-byline"><div class="field field-name-field-date field-type-datetime field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:datePublished"><span class="date-display-single" property="schema:datePublished" datatype="xsd:dateTime" content="2019-08-15T13:15:15-04:00">Aug 15, 2019</span></div>
+      </div>
+</div>
+</div><h3  class=" node-title fieldlayout node-field-title"><a href="/sequencing/court-tacks-10m-10x-genomics-infringement-penalty">Court Tacks On $10M to 10x Genomics Infringement Penalty</a></h3></div>                  <div class="fieldlayout-body clearfix  ">
+                                <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary schema:description"><p>In addition to the $24 million jury verdict, 10x must pay an additional $8.3 million in damages and $2.2 million in interest. It has appealed the case.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Court Tacks On $10M to 10x Genomics Infringement Penalty" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/sequencing/court-tacks-10m-10x-genomics-infringement-penalty" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+    </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a title="Go to page 2" href="/breaking-news?page=1">2</a></li>
+<li class="pager-item"><a title="Go to page 3" href="/breaking-news?page=2">3</a></li>
+<li class="pager-item"><a title="Go to page 4" href="/breaking-news?page=3">4</a></li>
+<li class="pager-item"><a title="Go to page 5" href="/breaking-news?page=4">5</a></li>
+<li class="pager-item"><a title="Go to page 6" href="/breaking-news?page=5">6</a></li>
+<li class="pager-item"><a title="Go to page 7" href="/breaking-news?page=6">7</a></li>
+<li class="pager-item"><a title="Go to page 8" href="/breaking-news?page=7">8</a></li>
+<li class="pager-item"><a title="Go to page 9" href="/breaking-news?page=8">9</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a title="Go to next page" href="/breaking-news?page=1">next ›</a></li>
+<li class="pager-last last"><a title="Go to last page" href="/breaking-news?page=38">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div>
+    </div>
+  </div>
+                          </div>
+              <div class="region region-sidebar-second">
+    <div class="region-sidebar-second-inner region-inner">
+      <div id="block-ad-manager-lr1" class="block block-ad-manager even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-lr1-0" class="ad-manager-ad gpt-ads ad-manager-ad--lr1"><div id="div-gpt-ad-21806255153-lr1-1016581418"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-lr1-1016581418"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-views-the-scan-block-scan" class="block block-views odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <div class="view view-the-scan view-id-the_scan view-display-id-block_scan view-dom-id-f0410b1f1f966e45238694c92d360c48 view-the-scan-block_scan">
+            <div class="view-header">
+      <h2><a title="The Scan" href="/scan">The Scan</a></h2>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-group">
+      <div class="views-row views-row-1 views-row-odd views-row-first">
+      <div id="node-406937" class="node node-blog-post node-not-page node-viewmode-no-image clearfix" about="/scan/explain-what-they-mean" typeof="schema:blogPost sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/scan/explain-what-they-mean">To Explain What They Mean</a></h3></div>        <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary"><p>The US National Institutes of Health's All of Us project awarded $4.6 million to the company Color to develop a genetic counseling resource for the program.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="To Explain What They Mean" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/scan/explain-what-they-mean" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-2 views-row-even">
+      <div id="node-406935" class="node node-blog-post node-not-page node-viewmode-no-image clearfix" about="/scan/few-days" typeof="schema:blogPost sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/scan/few-days">A Few Days</a></h3></div>        <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary"><p>The <em>Times of India </em>reports on a pilot study that used genomic testing to determine whether patients had drug-resistant tuberculosis.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="A Few Days" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/scan/few-days" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-3 views-row-odd">
+      <div id="node-406936" class="node node-blog-post node-not-page node-viewmode-no-image clearfix" about="/scan/slightly-larger-pool" typeof="schema:blogPost sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/scan/slightly-larger-pool">Slightly Larger Pool</a></h3></div>        <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary"><p>New guidelines say that more women may benefit from genetic testing for hereditary breast or ovarian cancer, according to the <em>Los Angeles Times</em>.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Slightly Larger Pool" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/scan/slightly-larger-pool" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+      <div class="views-row views-row-4 views-row-even views-row-last">
+      <div id="node-406934" class="node node-blog-post node-not-page node-viewmode-no-image clearfix" about="/scan/cell-studies-explore-microbiome-genes-tumor-influence-more" typeof="schema:blogPost sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/scan/cell-studies-explore-microbiome-genes-tumor-influence-more">Cell Studies Explore Microbiome Genes, Tumor Influence, More</a></h3></div>        <div  class=" fieldlayout-region-body"><div class="field field-name-field-teaser field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item even" property="schema:summary"><p>In Cell this week: small proteins identified among human microbiome, role for tumor microbes in pancreatic cancer survival, and more.</p>
+</div>
+      </div>
+</div>
+<span property="schema:name" content="Cell Studies Explore Microbiome Genes, Tumor Influence, More" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/scan/cell-studies-explore-microbiome-genes-tumor-influence-more" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+    </div>
+    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-lr2" class="block block-ad-manager even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-lr2-0" class="ad-manager-ad gpt-ads ad-manager-ad--lr2"><div id="div-gpt-ad-21806255153-lr2-761860172"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-lr2-761860172"); });</script></div></div>    </div>
+  </div>
+</div>
+    </div>
+  </div>
+          </div>
+
+        </div>
+          <div class="region region-sidebar-first">
+    <div class="region-sidebar-first-inner region-inner">
+      <div id="block-ad-manager-sr1" class="block block-ad-manager even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-sr1-0" class="ad-manager-ad gpt-ads ad-manager-ad--sr1"><div id="div-gpt-ad-21806255153-sr1-2095126045"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-sr1-2095126045"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-views-popular-block-hp" class="block block-views  block-with-title odd">
+  <div class="block-inner">
+          <h2 class="block-title">What's Popular?</h2>
+      
+    <div class="content block-content">
+      <div class="view view-popular view-id-popular view-display-id-block_hp view-dom-id-29d8cacf049862ac84795557fefc5a8b view-popular-block_hp">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ol>          <li class="views-row views-row-1 views-row-odd views-row-first"><div id="node-406904" class="node node-article-news node-not-page node-viewmode-stripped-down clearfix" about="/sequencing/10x-genomics-files-100m-ipo" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/sequencing/10x-genomics-files-100m-ipo">10x Genomics Files for $100M IPO</a></h3></div>        <div  class=" fieldlayout-region-body"><span property="schema:name" content="10x Genomics Files for $100M IPO" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/sequencing/10x-genomics-files-100m-ipo" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+</li>
+          <li class="views-row views-row-2 views-row-even"><div id="node-406925" class="node node-article-news node-not-page node-viewmode-stripped-down clearfix" about="/cancer/uspstf-formalizes-slightly-expanded-brca-screening-recommendations" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/cancer/uspstf-formalizes-slightly-expanded-brca-screening-recommendations">USPSTF Formalizes Slightly Expanded BRCA Screening Recommendations</a></h3></div>        <div  class=" fieldlayout-region-body"><span property="schema:name" content="USPSTF Formalizes Slightly Expanded BRCA Screening Recommendations" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/cancer/uspstf-formalizes-slightly-expanded-brca-screening-recommendations" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+</li>
+          <li class="views-row views-row-3 views-row-odd"><div id="node-406851" class="node node-article-news node-not-page node-viewmode-stripped-down clearfix" about="/regulatory-news/fda-stepping-actions-against-pgx-testing-forcing-some-labs-stop-reporting-drug" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/regulatory-news/fda-stepping-actions-against-pgx-testing-forcing-some-labs-stop-reporting-drug">FDA Stepping Up Actions Against PGx Testing, Forcing Some Labs to Stop Reporting Drug Information</a></h3></div>        <div  class=" fieldlayout-region-body"><span property="schema:name" content="FDA Stepping Up Actions Against PGx Testing, Forcing Some Labs to Stop Reporting Drug Information" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/regulatory-news/fda-stepping-actions-against-pgx-testing-forcing-some-labs-stop-reporting-drug" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+</li>
+          <li class="views-row views-row-4 views-row-even"><div id="node-406932" class="node node-article-news node-not-page node-viewmode-stripped-down clearfix" about="/liquid-biopsy/nih-awards-940k-johns-hopkins-led-team-extracellular-vesicle-research" typeof="schema:NewsArticle sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/liquid-biopsy/nih-awards-940k-johns-hopkins-led-team-extracellular-vesicle-research">NIH Awards $940K to Johns Hopkins-Led Team for Extracellular Vesicle Research </a></h3></div>        <div  class=" fieldlayout-region-body"><span property="schema:name" content="NIH Awards $940K to Johns Hopkins-Led Team for Extracellular Vesicle Research " class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/liquid-biopsy/nih-awards-940k-johns-hopkins-led-team-extracellular-vesicle-research" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+</li>
+          <li class="views-row views-row-5 views-row-odd views-row-last"><div id="node-406895" class="node node-article node-not-page node-viewmode-stripped-down clearfix" about="/sequencing/taiwanese-team-explores-new-sequencing-chemistry-power-novel-single-molecule-platform" typeof="schema:Article sioc:Item foaf:Document">
+  <div class="fieldlayout-layout fieldlayout-has-body fieldlayout-has-body_top clearfix"><div class="layout-inner">
+    <div class="content fieldlayout-contents" >
+                      <div class="fieldlayout-body clearfix  ">
+                        <div  class=" fieldlayout-region-body-top"><h3  class=" node-title fieldlayout node-field-title"><a href="/sequencing/taiwanese-team-explores-new-sequencing-chemistry-power-novel-single-molecule-platform">Taiwanese Team Explores New Sequencing Chemistry to Power Novel Single-Molecule Platform</a></h3><div class="paywall-status paywall-status-premium">Premium</div></div>        <div  class=" fieldlayout-region-body"><span property="schema:name" content="Taiwanese Team Explores New Sequencing Chemistry to Power Novel Single-Molecule Platform" class="rdf-meta element-hidden"></span><span rel="schema:url" resource="/sequencing/taiwanese-team-explores-new-sequencing-chemistry-power-novel-single-molecule-platform" class="rdf-meta element-hidden"></span></div>      </div>
+      </div>
+  </div></div>
+</div>
+</li>
+      </ol></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-sky" class="block block-ad-manager even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-sky-0" class="ad-manager-ad gpt-ads ad-manager-ad--sky"><div id="div-gpt-ad-21806255153-sky-696951130"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-sky-696951130"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-sr2" class="block block-ad-manager odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-sr2-0" class="ad-manager-ad gpt-ads ad-manager-ad--sr2"><div id="div-gpt-ad-21806255153-sr2-1327900304"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-sr2-1327900304"); });</script></div></div>    </div>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+
+    </div>
+  </div>
+    <div class="region region-footer-top">
+    <div class="region-footer-top-inner region-inner">
+      <div id="block-block-5" class="block block-block odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <h3>Sponsorships</h3>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-txt1" class="block block-ad-manager even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-txt1-0" class="ad-manager-ad gpt-ads ad-manager-ad--txt1"><div id="div-gpt-ad-21806255153-txt1-1374713543"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-txt1-1374713543"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-txt2" class="block block-ad-manager odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-txt2-0" class="ad-manager-ad gpt-ads ad-manager-ad--txt2"><div id="div-gpt-ad-21806255153-txt2-506639500"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-txt2-506639500"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-txt3" class="block block-ad-manager even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-txt3-0" class="ad-manager-ad gpt-ads ad-manager-ad--txt3"><div id="div-gpt-ad-21806255153-txt3-1074408602"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-txt3-1074408602"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-txt4" class="block block-ad-manager odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-txt4-0" class="ad-manager-ad gpt-ads ad-manager-ad--txt4"><div id="div-gpt-ad-21806255153-txt4-825329718"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-txt4-825329718"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-txt5" class="block block-ad-manager even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-txt5-0" class="ad-manager-ad gpt-ads ad-manager-ad--txt5"><div id="div-gpt-ad-21806255153-txt5-1482206140"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-txt5-1482206140"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-txt6" class="block block-ad-manager odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-txt6-0" class="ad-manager-ad gpt-ads ad-manager-ad--txt6"><div id="div-gpt-ad-21806255153-txt6-1689451942"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-txt6-1689451942"); });</script></div></div>    </div>
+  </div>
+</div>
+    </div>
+  </div>
+    <div class="region region-footer">
+    <div class="region-footer-inner region-inner">
+      <div id="block-ad-manager-foot" class="block block-ad-manager even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-foot-0" class="ad-manager-ad gpt-ads ad-manager-ad--foot"><div id="div-gpt-ad-21806255153-foot-851728901"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-foot-851728901"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-menu-block-5" class="block block-menu-block odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <div class="menu-block-wrapper menu-block-5 menu-name-menu-footer-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first leaf menu-mlid-2196 link-about-us link-node-198373"><a href="/about-us" title="">About us</a></li>
+<li class="leaf menu-mlid-2197 link-advertise link-node-198374"><a href="/advertise" title="">Advertise</a></li>
+<li class="leaf menu-mlid-542 link-contact link-node-5"><a href="/contact-us" title="">Contact</a></li>
+<li class="leaf menu-mlid-2319 link-jobs link-resources-jobs"><a href="/resources/jobs" title="">Jobs</a></li>
+<li class="last leaf menu-mlid-19774 link-sitemap link-sitemap"><a href="/sitemap" title="A text sitemap of the website.">Sitemap</a></li>
+</ul></div>
+    </div>
+  </div>
+</div>
+<div id="block-genomeweb-subscribe-link" class="block block-genomeweb even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <div class="gw-center">
+<a href="/subscribe" id="Footer_Subscribe" class="button button-yellow" title="Learn about our subscription plans.">Subscribe</a>
+</div>    </div>
+  </div>
+</div>
+<div id="block-ad-manager-bottom1" class="block block-ad-manager odd">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      
+<div id="ad-manager-ad-bottom1-0" class="ad-manager-ad gpt-ads ad-manager-ad--bottom1"><div id="div-gpt-ad-21806255153-bottom1-1626898193"><script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-21806255153-bottom1-1626898193"); });</script></div></div>    </div>
+  </div>
+</div>
+<div id="block-block-1" class="block block-block even">
+  <div class="block-inner">
+          
+    <div class="content block-content">
+      <p><a title="Privacy Policy" href="/privacy-policy">Privacy Policy</a>.  <a title="Terms and conditions" href="/terms-conditions">Terms &amp; Conditions</a>.  Copyright © 2019 GenomeWeb LLC.  All Rights Reserved.</p>    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+    <script type="text/javascript" src="/sites/default/files/advagg_js/js__usri4UvkR0H04uaYnE0zcykzgHv9wuz-V_FG29FkHuM__tXC4b9h-5bYJPC1WzzYyIgpqOakBdgR8xyWOk3RjcWY__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js" defer="defer"></script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__cSTZbz2gwU_lFgpHTTabyaPTpmlKLkDZMxirzdBiI8k__xPrAHj8mxjYhR-hstOQ5VLTuTSaUz8EsRCjxmPkwepU__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js" defer="defer"></script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__qaERnZZ8_XaxP1UmFAEikalVIWKHDMB7fJjrMiK5Kfg__iiM4v3oQKQxjgKUA8tWLvNrNCPN-Vai3tv1-RqAP1Uk__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js" defer="defer"></script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__O_BBa5t4fYlqJ7dEOQmgkxJlUUaeYzXjNCC4qTF6_mA__UsCpdyxdEo3-CmFXcRQ8KLqpEP61SRihR5JYyrOeQ5Y__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js" defer="defer"></script>
+<script type="text/javascript" src="/sites/default/files/advagg_js/js__MSHFTKqVWihCWljeUu5U4amm7mB7CWMYJxsGj4iHgNU__bJKqQdC9lMn29AdyzbCQzqgSdYLCCzHrYDOWPpcWTp8__iA23HFHLa74l7UF5G_H1jrMrg-Q957Lliha6QBc9rO8.js" defer="defer"></script>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"20681564e1","applicationID":"40796018","transactionName":"MlZWYEQHWhZQVRYLCgscdVdCD1sLHkALBxIWbERVUQM=","queueTime":0,"applicationTime":1875,"atts":"HhFVFgwdSRg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

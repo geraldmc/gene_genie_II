@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+    <link rel="manifest" href="static/site.webmanifest">
+    <script src="https://kit.fontawesome.com/82650a9721.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+
+    <title>{{ title }} - Gene Genie</title>
+</head>
+
+<body>
+<div id="msg" style="font-size:largest;">
+<!-- you can set whatever style you want on this -->
+</div>
+<div id="body" style="display:none;">
+<!-- everything else -->
+
+    <div class="container">
+    <header class="site-header">{% block header %}{% endblock %} </header>
+    </div>
+
+    <div class="container">
+    <main class="section">{% block search %}{% endblock %} </main>
+    </div>
+
+    <div class="container">
+    <header class="site-footer">{% block footer %}{% endblock %}</header> 
+    </div>
+    
+    <!-- Optional JS -->
+    <!-- jQuery first  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="static/js/scripts.js"></script>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#body').show();
+    $('#msg').hide();
+});
+</script>
+</body>
+</html>
+

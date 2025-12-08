@@ -1,0 +1,264 @@
+{% extends "layout_search.html" %}
+
+{% block header %}
+<nav class="navbar has-shadow">
+<div class="navbar-brand">
+    <a class="navbar-item" href={{ url_for('index') }}>
+        <img src="static/img/gene-genie.png" alt="The Gene Genie" width="100" height="28">
+    </a>
+    <div class="navbar-burger"> <span></span> <span></span> <span></span>
+    </div>
+</div>
+    <div id="navMenuColorprimary-example" class="navbar-menu">
+    <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="field is-grouped">
+        <p class="control">
+        <a class="button is-white" href="#">
+        <span class="icon">
+            <i class="fa fa-question-circle"></i>
+        </span>
+        <span>Ask question</span></a>
+        </p>
+        <p class="control">
+            <a class="button is-white" href="#">
+            <span class="icon">
+                <i class="fa fa-bell"></i>
+            </span></a>
+        </p>
+        </div>
+        </div>
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">
+            <figure class="image is-24x24 is-rounded">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png">
+            </figure>
+            &#160;{{user.username}}</a>
+        <div class="navbar-dropdown">
+        <div class="navbar-item is-uppercase">Account</div>
+        <hr class="navbar-divider ">
+        <a class="navbar-item is-leveled " href="# ">
+            Settings
+            <span class="icon">
+                <i class="fa fa-cog "></i>
+            </span></a>
+        <a class="navbar-item is-leveled" href="#">
+            Messages
+            <span class="icon ">
+                <i class="fa fa-comments"></i>
+            </span></a>
+        <a class="navbar-item is-leveled" href="#">
+            Sign Out
+            <span class="icon ">
+                <i class="fa fa-sign-out"></i>
+            </span></a>
+        </div>
+    </div>
+    </div> <!-- end navbar-end -->
+    </div> <!-- end navbar-menu -->
+</nav> 
+{% endblock %}
+
+{% block search %}
+<div class="container">
+    <section class="hero is-light is-bold">
+        <div class="hero-body">
+
+        <h1 class="title is-2 has-text-centered">Gene Genie</h1>
+        <h3 class="subtitle is-4 has-text-centered">An Independent Gene Search Marketplace</h3>
+
+        </div> <!-- end hero -->
+    </section>
+</br>
+    <form action={{ url_for('web_search') }} method="post" id="gene_form" class="field has-addons has-addons-centered">
+    <p class="control is-expanded is-large">
+    <input type="text" name="gene_search" maxlength="20" id="gene" value="" placeholder="enter a gene (IL10, SHBG, RB1, OMG, VAT1, DNMT1, TP53, BRCA1, DKK3, E2F3)" class="input has-text-right is-large" autocomplete="off" required="required"></p>
+    <p class="control"><button type="submit" name="" value="" class="button is-info is-large is-outlined">Submit</button></p>
+    </form> <!-- end form -->
+</div> <!-- end container -->
+{% endblock %}
+
+<div class="container"> <!-- BEGIN top results container -->
+{% block string_db %}
+    <div class="columns"> 
+        <!-- Testing results here... -->
+        <div class="column">
+            <div class="content is-small">
+            {% if sdb_resp[0] %}
+                <h1>{{sdb_resp[0]['preferredName']}}                
+                    <span class="icon has-text-danger"><i class="fab fa-gg"></i></span>
+                </h1>
+                <p>{{sdb_resp[0]['annotation']}}</p>
+                <ul>
+                    <li>Preferred Name: <strong>{{sdb_resp[0]['preferredName']}}</strong></li>
+                    <li>String ID: <strong>{{sdb_resp[0]['stringId']}}</strong></li>
+                    <li>Taxon: <strong>{{sdb_resp[0]['taxonName']}}</strong></li>
+                </ul>
+                <span class="icon has-text-dark">
+                    <i class="fas fa-info-circle"></i>
+                    </span>
+                <span class="icon has-text-success">
+                    <i class="fas fa-check-square"></i>
+                    </span>
+                <span class="icon has-text-link">
+                    <i class="fas fa-handshake"></i>
+                    </span>
+                </div> <!-- end content-->
+            </div> <!-- end left column -->
+            {% endif %}
+                <br>
+            <div class="column"><div class="content is-small">
+            {% if uni_terms %}
+                <h3>Tag Cloud:</h3>           
+                <div class="tags">
+                {% for tag in tags %}
+                {% if tag in ["RefSeq","KEGG", "HGNC", "MIM", "Ensembl", "EMBL"] %}
+                    <span class="tag is-info">{{ tags[tag] }}</span>
+                {% elif tag in ["GeneID","ID"] %}
+                    <span class="tag is-dark is-rounded">{{ tags[tag] }}</span>
+                {% elif tag in ["MaxQB","PeptideAtlas", "ProteomicsDB", "InterPro", "OrthoDB"] %}
+                    <span class="tag is-light is-rounded">{{ tags[tag] }}</span>
+                {% elif tag in ["ChEMBL","DrugBank", "InterPro", "Pfam"] %}
+                    <span class="tag is-light is-rounded">{{ tags[tag] }}</span>
+                {% else %}
+                    <span class="tag is-light is-rounded">{{ tags[tag] }}</span>
+                {% endif %}
+                {% endfor %}
+                </div>  
+                <ul>
+                    <li>Black: <em>GeneID, UniProt ID</em></li>
+                    <li>Blue: <em>RefSeq, KEGG, HGNC, MIM, Ensembl, EMBL</em></li>
+                </ul>
+            </div> <!-- end content, the else below is a hack to delay loading-->
+            {% else %}
+            <br><br>
+            <div class="box">
+            <figure class="image is-3by1">
+                <img src="https://string-db.org/api/image/network?identifiers={{term}}&amp;species=9606">
+            </figure>
+            <p>
+                <strong>{{term}}</strong> Interaction Network
+              </p>
+            <nav class="level is-mobile">
+                <div class="level-left">
+                  <a class="level-item" aria-label="reply">
+                    <span class="icon is-small is-success">
+                      <i class="fas fa-balance-scale-right" aria-hidden="true"></i>
+                    </span> 
+                  </a>
+                  <a class="level-item" aria-label="retweet">
+                    <span class="icon is-small">
+                      <i class="fas fa-retweet" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                  <a class="level-item" aria-label="like">
+                    <span class="icon is-small">
+                      <i class="fas fa-heart" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </div>
+              </nav> <!-- end nav level-->
+            </div>
+            {% endif %}
+        </div> <!-- end right column -->
+    </div> <!-- end columns -->
+{% endblock %}
+</div> <!-- end container -->
+
+{% block left_content %}
+{% if pmid_dict %}
+{% for pm in pmid_dict %}
+<ol class="services-list"> <!-- list of search results -->
+	<li class="boxed media service feed-record">
+		<figure class="media-left">
+			<p class="image is-32x32"><img alt="logo" class="logo" src="static/img/jeanie.png"></p>
+		</figure>
+		<div class="media-content">
+		<div class="content">
+		    <div class="title-columns columns is-gapless is-mobile">
+		    <div class="column">
+            <h3 class="title is-5"><a href="{{ pm['Url'] }}">{{pm['Title']}}</a></h3>
+            <strong>{{pm['Citation']}}</strong>
+
+		</div>
+	</div>
+		<p class="tagline text-small">
+		<span>{{pm['Abstract']}}</span>
+		</p>
+	</div> <!-- end content -->
+
+		<ul class="events">
+            <span class="tag is-success is-rounded">Curated</span>
+            <span class="tag is-dark is-rounded">Linked</span>
+		</ul>
+	</div> <!-- ends media content -->
+	</li>
+</ol>
+<hr>
+{% endfor %}
+{% endif %}
+{% endblock %}
+
+{% block right_content %}
+{% if featured %}
+<aside class="column is-narrow is-one-third sidebar">
+<h4 class="title section-title is-4">The Daily Grind</h4>
+{% for feature in featured %}
+    <div class="boxed">
+            <div class="content is-small"> 
+            {{ feature['date'] | safe}}
+            <ul class="posts-list">
+                <li>{{ feature['link'] | safe}}</li>
+            </ul>
+        </div>
+    </div> <!-- end boxed div -->
+{% endfor %}
+
+<div class="boxed sidebar-box">
+    <h3 class="title section-title is-4">Search Related </h3>
+    <ul class="sidebar-categories-list">
+    <li><a href="/link">Lorem ipsum dolor sit amet.</a></li>
+    <li><a href="/link">Lorem ipsum dolor sit amet.</a></li>
+    <li><a href="/link">Lorem ipsum dolor sit amet.</a></li>
+    <li><a href="/link">Lorem ipsum dolor sit amet.</a></li>
+    </ul>
+
+</div> <!-- end boxed sidebar-box-->
+{% endif %}
+{% endblock %}
+
+{% block footer %}
+</br>
+<footer class="footer has-background-light">
+    <div class="content has-text-centered has-text-grey">
+      <div class="columns">
+        <div class="column">
+            <article class="message is-dark">
+            <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. <a>Sator Arepo Tenet Opera Rotas</a></a>. 
+            </div>
+            </article>
+        </div>
+        <div class="column">
+        <article class="message is-info">
+            <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. <a>Sator Arepo Tenet Opera Rotas</a></a>. 
+            </div>
+        </article>
+        </div>
+        <div class="column">
+        <article class="message is-dark">
+            <div class="message-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. <a>Sator Arepo Tenet Opera Rotas</a></a>. 
+            </div>
+        </article>
+        </div>
+      </div>
+      <p>
+            <strong>Built</strong> by <a href="">Gerald McCollam</a>. The source is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+    </div>
+  </footer>
+{% endblock %}

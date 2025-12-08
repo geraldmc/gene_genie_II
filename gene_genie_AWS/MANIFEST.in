@@ -1,0 +1,2 @@
+recursive-include gene_genie/templates *
+recursive-include gene_genie/static *
