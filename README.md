@@ -1,135 +1,187 @@
-# What is this?
+# Gene-Genie
 
-This repository contains project components for `Gene-Genie`.
+A web API and client for aggregating genomic information from multiple data sources.
 
-### Intro
+## Overview
 
-Genomics APIs represent an evolving set of protocols that assist developers in managing the plethora of data sources and in building more interoperable applications. Due to the expanding volume and diversity of genomics data, Application Programming Interfaces (APIs) have been developed to provide more secure and predictable access to a wider variety of applications and platforms.
+Genomics APIs provide secure, predictable access to an expanding volume and diversity of genomic data. Gene-Genie consolidates information from multiple API sources into a unified interface, simplifying the process of querying and cross-referencing genomic databases.
 
-For this project I've built a web API and web client site to aggregate genomic information from multiple API sources. An example data provider is Entrez where access to PubMed, PMC, Gene, and Nuccore are provided in API form.
+**Data Sources:**
 
-# Gene Genie - API and Client
+- **Entrez** — Access to PubMed, PMC, Gene, and Nuccore databases
+- **String-db.org** — Protein annotations and network interactions
+- **UniProt** — Resource ID tags and cross-references
+- **GenomeWeb** — Genomics news and articles
 
-### Requirements
-This project consists of two parts - an API and a web client. The client runs as a Flask app on AWS with API functions serving as primary endpoints. The following instructions are supplied to build the app and test:
+## Features
 
-#### Build with `venv` on EC2:
+- Search genes by name and retrieve functional annotations
+- Cross-reference identifiers across multiple databases
+- Fetch related articles from PubMed
+- Display protein-protein interaction networks
+- Tag cloud visualization of database cross-references
 
-```bash
-    $ apt-get install python3-venv
-    (clone repository from Github)
-    $ python3 -m venv venv
-    $ source ./venv/bin/activate
-    $ (venv) cd [root]/gmccoll2_final/gene_genie
-    $ (venv) pip install -r ../requirements.txt
-```
-#### Run app locally:
-```bash
-    $ cd [root]/gmccoll2_final/gene_genie
-    $ source ./venv/bin/activate
-    $ (venv) export FLASK_APP=gene_genie.py 
-    $ (venv) export FLASK_ENV=development 
-    $ (venv) flask run -h localhost -p 8000
-```
-#### Run on Amazon EC2:
-```bash
-    (login to EC2 per instructions, type the word 'final' once logged in)
-    $ final
-    $ ./run.sh
-```
-### Gene-Genie `Web Client`:
-The`Gene Genie`web client is a simple Flask app used to demonstrate results fom the API. It has a search view and a result. The pages have been designed using the CSS framework [Bulma](http://bulma.io).
+## Architecture
 
-The app entry page is here:
+The project consists of two components:
 
-http://35.174.60.242:8000/
+- **API Layer** — Flask-based REST API that wraps external genomics data sources
+- **Web Client** — Flask application with a search interface styled using [Bulma](https://bulma.io)
 
-This url renders an `index` page:
+> **Note:** A migration to FastAPI is planned. See [Roadmap](#roadmap) for details.
 
-![image info](./images/search.png)
+## Installation
 
-1. Header - Always displayed, contains a link back to the index page on upper left. 
-2. Hero - yes.
-3. Account - Stub for implementing accounts.
-4. Search - Main search term entry form.
-5. Results -  Area of the page where results will be displayed.
-6. Footer - right.
+### Prerequisites
 
-The app `search` page is accessible only through the app. 
+- Python 3.8+
+- pip
 
-This url renders an search results page:
-
-![image info](./images/results.png)
-
-1. Annotations - provided by String-db.org.
-2. Tags - These are reference id translations to many other database resources.
-3. Related articles - Articles provided by Pubmed. Displays only one but can have many more. 
-4. Depending on latency, the tag cloud may be replaced by a network interaction graph.  
-
-----
-#### __Note__: The app runs on Amazon EC2 with a non-static IP that will change on each restart. The server will run continuously from 08/21/2019 to 08/25/2019.
-----
-
-
-### Gene-Genie `API Spec:`
-
-| HTTP Method | URI                                         | Action                                |
-|-------------|---------------------------------------------|---------------------------------------|
-| POST         | http://[host]:8000/api/v1.0/stringdb/annotation/<string:term>    | Retrieve annotation from String-db.org. |
-| POST         | http://[host]:8000/api/v1.0/stringdb/annotations/<string:term>          | Retrieve multiple annotations from String-db.org.         |
-| POST         | http://[host]:8000/api/v1.0/uniprot/<string:term>    | Retrieve resource id tags from UniProt. |
-| GET         | http://[host]:8000/api/v1.0/pubmed/summary/<int:pmid>    | Retrieve summary article from PubMed. |
-| GET         | http://[host]:8000/api/v1.0/genomeweb/article/<int:gwid>    | Retrieve single news item from genomeweb.com. |
-| GET         | http://[host]:8000/api/v1.0/genomeweb/articles/         | Retrieve multiple news items from genomeweb.com.         |
-
-### To Test:
+### Setup
 
 ```bash
+# Clone the repository
+git clone https://github.com/<your-username>/gene_genie.git
+cd gene_genie
 
-    $ curl -i <host>:8000/api/v1.0/stringdb/annotation/BRCA1
-    $ curl -i <host>:8000/api/v1.0/stringdb/annotations/BRCA1
-    $ curl -i <host>:8000/api/v1.0/uniprot/BRCA1
-    $ curl -i <host>:8000/api/v1.0/pubmed/summary/31411802
-    $ curl -i <host>:8000/api/v1.0/genomeweb/article/1
-    $ curl -i <host>:8000/api/v1.0/genomeweb/articles/ 
+# Create and activate virtual environment
+python3 -m venv venv
+source ./venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-### Example (should work through 08/25):
+## Usage
+
+### Running Locally
 
 ```bash
-    $ curl -i http://35.174.60.242:8000/api/v1.0/stringdb/annotation/BRCA1
-    $ curl -i http://35.174.60.242:8000/api/v1.0/stringdb/annotations/BRCA1
-    $ curl -i http://35.174.60.242:8000/api/v1.0/uniprot/BRCA1
-    $ curl -i http://35.174.60.242:8000/api/v1.0/pubmed/summary/31411802
-    $ curl -i http://35.174.60.242:8000/api/v1.0/genomeweb/article/1
-    $ curl -i http://35.174.60.242:8000/api/v1.0/genomeweb/articles/ 
+cd gene_genie
+source ./venv/bin/activate
+
+export FLASK_APP=gene_genie.py
+export FLASK_ENV=development
+
+flask run -h localhost -p 8000
 ```
 
-### Run API directly from project root:
+The web client will be available at `http://localhost:8000/`.
+
+### Web Client
+
+The web client provides a search interface for querying genomic data:
+
+**Search Page**
+
+![Search page](./images/search.png)
+
+- **Header** — Navigation with link to home
+- **Search** — Gene name entry form
+- **Results** — Display area for query results
+
+**Results Page**
+
+![Results page](./images/results.png)
+
+- **Annotations** — Functional annotations from String-db.org
+- **Tags** — Cross-reference IDs to external databases
+- **Related Articles** — Publications from PubMed
+- **Interaction Graph** — Protein network visualization (when available)
+
+## API Reference
+
+| HTTP Method | Endpoint | Description |
+|-------------|----------|-------------|
+| POST | `/api/v1.0/stringdb/annotation/<term>` | Retrieve annotation from String-db.org |
+| POST | `/api/v1.0/stringdb/annotations/<term>` | Retrieve multiple annotations from String-db.org |
+| POST | `/api/v1.0/uniprot/<term>` | Retrieve resource ID tags from UniProt |
+| GET | `/api/v1.0/pubmed/summary/<pmid>` | Retrieve summary article from PubMed |
+| GET | `/api/v1.0/genomeweb/article/<gwid>` | Retrieve single news item from GenomeWeb |
+| GET | `/api/v1.0/genomeweb/articles/` | Retrieve multiple news items from GenomeWeb |
+
+### Example Requests
+
 ```bash
-    $ cd [root]/gmccoll2_final/gene_genie
-    $ source ./venv/bin/activate
+# String-db annotations
+curl -i http://localhost:8000/api/v1.0/stringdb/annotation/BRCA1
+curl -i http://localhost:8000/api/v1.0/stringdb/annotations/BRCA1
+
+# UniProt cross-references
+curl -i http://localhost:8000/api/v1.0/uniprot/BRCA1
+
+# PubMed article summary
+curl -i http://localhost:8000/api/v1.0/pubmed/summary/31411802
+
+# GenomeWeb news
+curl -i http://localhost:8000/api/v1.0/genomeweb/article/1
+curl -i http://localhost:8000/api/v1.0/genomeweb/articles/
 ```
-#### entrez_api:
+
+## Deployment
+
+### Cloud Deployment (AWS EC2)
+
 ```bash
-    $ (venv) ./app/api/entrez_api.py
+# Install dependencies on EC2 instance
+sudo apt-get install python3-venv
+
+# Clone and set up the project
+git clone https://github.com/<your-username>/gene_genie.git
+cd gene_genie
+python3 -m venv venv
+source ./venv/bin/activate
+pip install -r requirements.txt
+
+# Run the application
+./run.sh
 ```
-#### stringdb_api:
+
+The application will be accessible at `http://<your-ec2-public-ip>:8000/`.
+
+> **Tip:** For production deployments, consider using Gunicorn with Nginx as a reverse proxy.
+
+## Development
+
+### Running API Modules Directly
+
+Individual API modules can be run standalone for testing and development:
+
 ```bash
-    $ (venv) ./app/api/stringdb_api.py
+source ./venv/bin/activate
+
+# Entrez API
+./app/api/entrez_api.py
+
+# String-db API
+./app/api/stringdb_api.py
+
+# UniProt API
+./app/api/uniprot_api.py
+
+# PubMed API
+./app/api/pubmed_api.py
 ```
-#### uniprot_api:
-```bash
-    $ (venv) ./app/api/uniprot_api.py
- ```   
-#### pubmed_api:
-```bash
-    $ (venv) ./app/api/pubmed_api.py
+
+**GenomeWeb API** (interactive):
+
+```python
+from app.api import genome_web_api
+
+gw_api = genome_web_api.GenomeWebAPI()
+items = gw_api.fetch()
+print(items)
 ```
-### genome_web_api:
-```bash
-    $ (venv)  from app.api import genome_web_api
-    $ (venv)  gw_api = genome_web_api.GenomeWebAPI()
-    $ (venv)  items = gw_api.fetch()
-    $ (venv)  print(items)
-```
+
+## Roadmap
+
+- [ ] Migrate from Flask to FastAPI
+- [ ] Add async support for concurrent API requests
+- [ ] Implement response caching
+- [ ] Add OpenAPI/Swagger documentation
+- [ ] Containerize with Docker
+- [ ] Add unit and integration tests
+
+## License
+
+[Add your license here]
